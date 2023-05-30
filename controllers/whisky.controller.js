@@ -45,6 +45,40 @@ class WhiskyController {
     }
   };
 
+  //위스키 보유 스토어 조회
+  whiskyStore = async (req, res, next) => {
+    try {
+      const { whisky_id } = req.params;
+      const whisky = await this.whiskyService.findWhiskyById(whisky_id);
+      if (!whisky) {
+        throw new Error("403/위스키가 존재하지 않습니다.");
+      }
+      const whiskyStore = await this.whiskyService.whiskyStore(whisky_id);
+
+      res.status(200).json(whiskyStore);
+    } catch (error) {
+      error.failedApi = "위스키 보유 스토어 조회";
+      throw error;
+    }
+  };
+
+  //위스키 코멘트 조회
+  whiskyComment = async (req, res, next) => {
+    try {
+      const { whisky_id } = req.params;
+      const whisky = await this.whiskyService.findWhiskyById(whisky_id);
+      if (!whisky) {
+        throw new Error("403/위스키가 존재하지 않습니다.");
+      }
+      const whiskyComment = await this.whiskyService.whiskyComment(whisky_id);
+
+      res.status(200).json(whiskyComment);
+    } catch (error) {
+      error.failedApi = "위스키 코멘트 조회";
+      throw error;
+    }
+  };
+
   //위스키정보 생성
   createWhisky = async (req, res, next) => {
     try {
@@ -56,8 +90,9 @@ class WhiskyController {
         whisky_region,
         whisky_age,
         whisky_type,
-        whisky_taste,
         whisky_photo,
+        whisky_desc,
+        whisky_abv,
       } = req.body;
 
       // if (user_id !== "관리자 아이디") {
@@ -72,7 +107,8 @@ class WhiskyController {
         whisky_region,
         whisky_age,
         whisky_type,
-        whisky_taste,
+        whisky_desc,
+        whisky_abv,
       };
 
       await this.whiskyService.createWhisky(whiskyData);
@@ -96,8 +132,9 @@ class WhiskyController {
         whisky_region,
         whisky_age,
         whisky_type,
-        whisky_taste,
         whisky_photo,
+        whisky_desc,
+        whisky_abv,
       } = req.body;
 
       // if (user_id !== "관리자 아이디") {
@@ -116,7 +153,8 @@ class WhiskyController {
         whisky_region,
         whisky_age,
         whisky_type,
-        whisky_taste,
+        whisky_desc,
+        whisky_abv,
       };
 
       await this.whiskyService.updateWhisky(whisky_id, whiskyData);
