@@ -21,7 +21,7 @@
     <td><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/e7224472-3ca0-4a45-88d1-f13075911d23" alt="다위스키 아이콘" style="width: 20px; height: 20px; padding-top: 10px;"></td>
     <td><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.dawhisky.com">DA WHISKY 바로가기</a></td>
     <td><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/ad8ad10c-7bce-4157-bf21-238d672086c9" alt="노션 아이콘" style="width: 20px; height: 20px; padding-top: 10px;"></td>
-<td><a target="_blank" rel="noopener noreferrer nofollow" href="https://team-spirits.oopy.io">팀 노션 바로가기</a></td>
+<td><a target="_blank" rel="noopener noreferrer nofollow" href="https://team-spirits.notion.site/DA-WHISKY-8cd5298ee7fe4921983d820d87681467?pvs=4">팀 노션 바로가기</a></td>
   </tr>
   <tr align="center">
     <td><img src="https://github.com/dawhisky/dawhisky-FE/assets/84097192/54e001c4-5d51-4cba-b988-f3802b16df50" alt="리액트 아이콘" style="width: 25px; height: 20px; padding-top: 10px;"></td>
@@ -150,13 +150,13 @@
 
 ## **🥃 트러블슈팅**
 
-### [👉 DB 감지 체계](https://team-spirits.oopy.io/88fac133-5ac4-4c08-aecc-429362ff46f8)
+### [👉 DB 감지 체계](https://team-spirits.notion.site/DB-88fac1335ac44c08aecc429362ff46f8?pvs=4)
 
-### [👉 카카오 싱크](https://team-spirits.oopy.io/413c112e-e41f-4f4c-a2ea-10cfd8475517)
+### [👉 카카오 싱크](https://team-spirits.notion.site/413c112ee41f4f4ca2ea10cfd8475517?pvs=4)
 
-### [👉 카카오 로그인](https://team-spirits.oopy.io/f4044701-6189-408d-8e80-69c9739e218b)
+### [👉 카카오 로그인](https://team-spirits.notion.site/f40447016189408d8e8069c9739e218b?pvs=4)
 
-### [👉 EC2 instance](https://team-spirits.oopy.io/8f779818-7a6c-4a11-889f-ecda63cc4b63)
+### [👉 EC2 instance](https://team-spirits.notion.site/EC2-8f7798187a6c4a11889fecda63cc4b63?pvs=4)
 
 <br /> <br />
 
@@ -254,7 +254,7 @@
       - 위스키 및 점주 DB 스크랩핑 작업
     </td>
     <td align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/junkyo974">@junkyo974</a></td>
-    <td align="center">@junkyo814@naver.com</td>
+    <td align="center">junkyo814@naver.com</td>
   </tr>
 </table>
 
